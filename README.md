@@ -11,15 +11,15 @@ The simple program is structured in various layers.
 1. Models: In this package we have different python files named as Models.py,
 Database.py, UserSession.py. All these files are designed to do certain tasks.
 
-a. Models.py: This file has classes for different tables that will be created inside the
-database. The tables that are being created are:
-  i. Customer(cust_id, name, username, password, level), here level → 0 is
-    for customer, level → 1 for vendors and level→ 2 for admin.
-  ii. Vendor(vendor_id, cust_id, restaruant_name)
-  iii. Food(food_id, vendor_id, dish_name, calories_per_gm,
-    available_quantity, unit_price)
-  iv. Orders(order_id, cust_id, total_amount, date)
-  v. OrderItems(item_id, order_id, food_id, quantity, amount)
+    a. Models.py: This file has classes for different tables that will be created inside the
+    database. The tables that are being created are:
+      i. Customer(cust_id, name, username, password, level), here level → 0 is
+        for customer, level → 1 for vendors and level→ 2 for admin.
+      ii. Vendor(vendor_id, cust_id, restaruant_name)
+      iii. Food(food_id, vendor_id, dish_name, calories_per_gm,
+        available_quantity, unit_price)
+      iv. Orders(order_id, cust_id, total_amount, date)
+      v. OrderItems(item_id, order_id, food_id, quantity, amount)
 
 2. apis.py
 This file is designed to call some of the implemented APIs such as adding
